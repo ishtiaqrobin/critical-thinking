@@ -48,7 +48,9 @@ const removeDupArr = (arr) => {
     return newArr; // Return the array without duplicates
 }
 
-console.log(removeDupArr(hugeDataSet));
+const removeDupArrResult = removeDupArr(hugeDataSet);
+
+console.log(removeDupArrResult);
 
 const arrEndTime = performance.now();
 
@@ -64,7 +66,9 @@ const removeDupSet = (arr) => {
     return Array.from(set); // Convert Set back to Array
 }
 
-console.log(removeDupSet(hugeDataSet));
+const removeDupSetResult = removeDupSet(hugeDataSet);
+
+console.log(removeDupSetResult);
 
 const setEndTime = performance.now();
 console.log("Set Time Taken:", (setEndTime - setStartTime), "ms");
@@ -92,4 +96,5 @@ console.log("Set Time Taken:", (setEndTime - setStartTime), "ms");
 
 // Conclusion:
 // For removing duplicates from arrays, especially large ones, using Set is the preferred approach due to its efficiency and simplicity.
+
 

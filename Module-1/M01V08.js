@@ -48,6 +48,7 @@
 const arr = ["apple", "banana", "orange", "apple", "banana"];
 
 // Brute Force
+
 const removeDupArr = (arr) => {
     const newArr = []; // Initialize an empty array to store unique elements
 
