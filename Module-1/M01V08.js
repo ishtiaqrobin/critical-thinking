@@ -47,8 +47,7 @@
 
 const arr = ["apple", "banana", "orange", "apple", "banana"];
 
-// Brute Force
-
+//* Brute Force
 const removeDupArr = (arr) => {
     const newArr = []; // Initialize an empty array to store unique elements
 
@@ -63,7 +62,7 @@ const removeDupArr = (arr) => {
 
 console.log(removeDupArr(arr)); // Output: ["apple", "banana", "orange"]
 
-// Using Set
+//* Using Set
 const removeDupSet = (arr) => {
     const set = new Set(arr); // Create a Set from the array, automatically removing duplicates
 

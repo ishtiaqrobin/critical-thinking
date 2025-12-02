@@ -9,7 +9,7 @@ class LinkedList {
     constructor() {
         this.head = null
         this.tail = null
-        this.lenght = 0
+        this.length = 0
     }
 
     append(value) {
@@ -25,7 +25,7 @@ class LinkedList {
             this.tail = newNode;
         }
 
-        this.lenght++
+        this.length++
 
         return this
     }
@@ -43,13 +43,13 @@ class LinkedList {
             this.head = newNode;
         }
 
-        this.lenght++
+        this.length++
 
         return this
     }
 
     insert(index, value) {
-        if (index < 0 || index > this.lenght) {
+        if (index < 0 || index > this.length) {
             console.error("Index out of bound");
             return undefined
         }
@@ -60,7 +60,7 @@ class LinkedList {
         }
 
         // If the insert is in the end of the linked list 
-        if (index === this.lenght) {
+        if (index === this.length) {
             return this.append(value)
         }
 
@@ -76,7 +76,7 @@ class LinkedList {
         leadingNode.next = newNode
         newNode.next = holdingNode
 
-        this.lenght++
+        this.length++
     }
 
     remove() { }

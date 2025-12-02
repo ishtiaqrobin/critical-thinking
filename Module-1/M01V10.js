@@ -28,8 +28,7 @@ const generatedBookData = (bookSize) => {
 const hugeBookData = generatedBookData(500000);
 // console.log("Original Book Data Size:", hugeBookData);
 
-// Brute Force
-
+//* Brute Force
 const arrStartTime = performance.now();
 const removeDupBookArr = (arr) => {
     const newBookArr = [];
@@ -50,8 +49,7 @@ const arrEndTime = performance.now();
 console.log("Without Duplicate Data Using Brute Force:", removeDupBookArrResult);
 console.log("Brute Force Time Taken :", (arrEndTime - arrStartTime), "milisecond");
 
-// Using Set
-
+//* Using Set
 const arrSetStartTime = performance.now();
 const removeDupArrSet = (arr) => {
     const bookSet = new Set(arr);

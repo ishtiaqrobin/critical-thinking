@@ -1,6 +1,6 @@
 //* Input Data
 
-const surveyResoponse = [
+const surveyResponse = [
     "A",
     "C",
     "B",
@@ -22,7 +22,7 @@ const surveyResoponse = [
 //TODO: If it exits then increment the count
 //TODO: If not then initialize it with 1
 
-const count = surveyResoponse.reduce((table, response) => {
+const count = surveyResponse.reduce((table, response) => {
     console.log(table, " :", response);
 
     if (table[response]) {

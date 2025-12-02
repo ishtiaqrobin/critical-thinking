@@ -33,8 +33,7 @@ const hugeDataSet = generateSimData(500000);
 
 console.log("Original Data Size:", hugeDataSet.length);
 
-// Brute Force
-
+//* Brute Force
 const arrStartTime = performance.now();
 
 const removeDupArr = (arr) => {
@@ -56,8 +55,7 @@ const arrEndTime = performance.now();
 
 console.log("Brute Force Time Taken:", (arrEndTime - arrStartTime), "ms");
 
-// Using Set
-
+//* Using Set
 const setStartTime = performance.now();
 
 const removeDupSet = (arr) => {

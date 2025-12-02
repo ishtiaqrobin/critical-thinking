@@ -9,7 +9,7 @@ class LinkedList {
     constructor() {
         this.head = null
         this.tail = null
-        this.lenght = 0
+        this.length = 0
     }
 
     append(value) {
@@ -25,7 +25,7 @@ class LinkedList {
             this.tail = newNode;
         }
 
-        this.lenght++
+        this.length++
 
         return this
     }
@@ -43,7 +43,7 @@ class LinkedList {
             this.head = newNode;
         }
 
-        this.lenght++
+        this.length++
 
         return this
     }
